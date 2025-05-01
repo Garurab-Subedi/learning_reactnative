@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ScrollView, Text, StyleSheet, TextInput } from 'react-native';
+import { ScrollView, Text, StyleSheet, TextInput, Image} from 'react-native';
 
 export default function WelcomeScreen() {
     const [firstName, onChangeFirstName] = useState('');
@@ -11,6 +11,7 @@ export default function WelcomeScreen() {
         and classic cocktails in a lively but casual environment. We would love
         to hear your experience with us!
       </Text>
+      {/* <Image source={require("../../assets/images/")} /> */}
       <TextInput
         style={styles.inputBox}
         value={firstName}
@@ -28,14 +29,14 @@ const styles = StyleSheet.create({
   headerText: {
     padding: 40,
     fontSize: 30,
-    color: '#EDEFEE',
+    color: 'black',
     textAlign: 'center',
   },
   regularText: {
     fontSize: 24,
     padding: 20,
     marginVertical: 8,
-    color: '#EDEFEE',
+    color: 'grey',
     textAlign: 'center',
   },
   inputBox: {
